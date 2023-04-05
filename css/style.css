@@ -1,0 +1,96 @@
+@charset 'UTF-8';
+
+*, *:before, *:after {
+    box-sizing: border-box
+}
+
+html {
+    font-size: 18px;
+    line-height: normal;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+#arrangeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+}
+
+#arrangeList div {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    flex-basis: 16.32%;
+}
+
+#arrangeList .even {
+    background-color: rgb(192 223 255);
+    border: 1px solid rgb(192 223 255);
+}
+#arrangeList .odd {
+    background-color: rgb(255 223 190);
+    border: 1px solid rgb(255 223 190);
+}
+
+.pointNum {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#searchArea {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#searchArea input[type="text"] {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#searchArea button {
+    padding: 9px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#searchArea #search {
+    border: 1px solid rgb(137, 173, 228);
+    background-color: rgb(137, 173, 228);
+    transition: 0.5s;
+}
+
+#searchArea #search.none {
+    border: 1px solid lightgray !important;
+    background-color: lightgray !important;
+    transition: 0.5s;
+    cursor: auto;
+}
+
+#searchArea #reset {
+    border: 1px solid lightgray;
+    background-color: lightgray;
+}
+
+#searchArea #error {
+    color: red;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
